@@ -1,13 +1,10 @@
 import Image from "next/image";
+import Home from "./Home/Page";
 
-export default function Home() {
+export default function Main() {
   return (
     <>
-    <div>
-      <h1>Hello this is me testing my new project
-          
-      </h1>
-    </div>
+    <Home/>
     </>
   );
 }
