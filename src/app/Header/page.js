@@ -1,5 +1,7 @@
 "use client"
+import Link from "next/link";
 import { useState } from "react";
+import About from "../About/page";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,8 +41,10 @@ export default function Header() {
         >
           <ul className="flex flex-col lg:flex-row lg:space-x-6 mt-4 lg:mt-0">
             <li>
-              <a href="#content" className="block hover:underline text-gray-700">
+              <a className="block hover:underline text-gray-700">
+                <Link href={"About"}>
                 About
+                </Link>
               </a>
             </li>
             <li>
