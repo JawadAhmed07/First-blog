@@ -1,3 +1,5 @@
+import Reviews from "@/components/reviews";
+import ReviewScroller from "@/components/reviews";
 import React from "react";
 
 export default function Home() {
@@ -365,12 +367,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
+        {/* Review section */}
+        <Reviews/>
       </section>
-
-
-
     </div>
   );
 }

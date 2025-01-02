@@ -42,27 +42,30 @@ export default function Header() {
           <ul className="flex flex-col lg:flex-row lg:space-x-6 mt-4 lg:mt-0">
             <li>
               <a className="block hover:underline text-gray-700">
-                <Link href={"About"}>
-                About
+                <Link href={"/"}>
+                Home
                 </Link>
               </a>
             </li>
             <li>
-              <a
-                href="#subscribe"
-                className="block hover:underline text-gray-700"
-              >
-                Subscribe
+              <a className="block hover:underline text-gray-700">
+                <Link href={"About"}>
+                Blogs
+                </Link>
               </a>
             </li>
             <li>
-              <a
-                href="https://www.etsy.com/shop/digicaredesign/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block hover:underline text-gray-700"
-              >
-                Etsy Store
+              <a className="block hover:underline text-gray-700">
+                <Link href={"About"}>
+                Privacy Policy
+                </Link>
+              </a>
+            </li>
+            <li>
+              <a className="block hover:underline text-gray-700">
+                <Link href={"About"}>
+                About
+                </Link>
               </a>
             </li>
           </ul>
