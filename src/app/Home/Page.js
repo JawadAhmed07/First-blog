@@ -1,5 +1,6 @@
 import Reviews from "@/components/reviews";
 import ReviewScroller from "@/components/reviews";
+import Image from "next/image";
 import React from "react";
 
 export default function Home() {
@@ -29,7 +30,7 @@ export default function Home() {
           </div>
         </div> */}
         {/* Featured section */}
-        <section className="text-gray-600 body-font px-4 sm:px-6 lg:px-10">
+        <section className="text-gray-600 body-font px-4 sm:px-6 lg:px-20">
           <div className="container mx-auto py-12">
             <h2 className="text-4xl font-bold px-2 mb-8">Featured Section</h2>
             <div className="flex flex-wrap -m-4">
@@ -94,10 +95,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
         {/* Best selling designs  */}
-        <section className="text-gray-600 body-font px-10">
+        <section className="text-gray-600 body-font px-10 lg:px-20">
           <div className="container px-5 py-24 mx-auto flex flex-wrap">
             <div className="flex w-full mb-20 flex-wrap">
               <h1 className="sm:text-3xl text-2xl font-bold uppercase title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
@@ -159,8 +158,50 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Custom order request  */}
+        <section className="text-gray-600 body-font lg:px-20">
+          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+              <img
+                className="object-cover object-center rounded"
+                alt="hero"
+                src="https://scontent.fkhi17-1.fna.fbcdn.net/v/t39.30808-6/471279711_122178317078308513_3832552554033946611_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=-ZuJT8AmxAcQ7kNvgEeBRnR&_nc_oc=AdhZtnVqRAURxxDvP3HzV2B1ZGXU42M0-Bni1ew6WlL5g4zoJtLfddkyVc3lltm3Gcs&_nc_zt=23&_nc_ht=scontent.fkhi17-1.fna&_nc_gid=AQHKErYE-ri-c-CxU7jRNCD&oh=00_AYBO0mX_v7WCy3r-FQo0sKe5oZCpopGH-eOr3OdfcIwdlg&oe=677CB65D"
+              />
+            </div>
+            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+              <h2 className="text-3xl py-4 text-blue-400">CUSTOM ORDER REQUEST</h2>
+              <p>
+                Perfect for personal and commercial use, our one-of-a-kind digital prints offer the perfect mix of style and affordability.
+              </p>
+
+              <h2 className="text-2xl py-4 text-blue-400">HOW TO ORDER</h2>
+              <ol>
+                <li>Message us with a design or idea that matches your taste.</li>
+                <li>Kick-start the project by purchasing the listing and sending your email address in the personalization box.</li>
+                <li>
+                  Once your design is ready, we will share a preview. After your approval, we'll upload it to our shop so you can easily purchase it.
+                </li>
+              </ol>
+
+              <h2 className="text-2xl py-4 text-blue-400">TURNAROUND TIMES</h2>
+              <p>
+                Enjoy a hassle-free custom design experience with our quick turnaround times, taking less than 6-12 hours to complete!
+              </p>
+              <div className="flex justify-center py-5">
+                <button className="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                  <a href="https://digicareDesign.etsy.com">Order now</a>
+                </button>
+                <button className="ml-4 inline-flex text-white
+                 bg-orange-600 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                  <a href="https://digicareDesign.etsy.com">Etsy store</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Blogs */}
-        <section className="text-gray-600 body-font">
+        <section className="text-gray-600 body-font lg:px-20">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap -m-4">
               <div className="p-4 md:w-1/3">
@@ -368,7 +409,7 @@ export default function Home() {
           </div>
         </section>
         {/* Review section */}
-        <Reviews/>
+        <Reviews />
       </section>
     </div>
   );

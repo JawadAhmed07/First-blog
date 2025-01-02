@@ -49,7 +49,7 @@ export default function Header() {
             </li>
             <li>
               <a className="block hover:underline text-gray-700">
-                <Link href={"About"}>
+                <Link href={"Blogs"}>
                 Blogs
                 </Link>
               </a>
